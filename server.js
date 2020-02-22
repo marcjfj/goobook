@@ -50,7 +50,7 @@ app.get('/api/saved', (req, res) => {
     res.json(books);
   });
 });
-app.use((req, res) => {
+app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
