@@ -50,7 +50,7 @@ app.get('/api/saved', (req, res) => {
   });
 });
 app.use((req, res) => {
-  res.sendFile(path.join(__dirname, './build/index.html'));
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
 mongoose.connect(mongoUri, { useNewUrlParser: true });
